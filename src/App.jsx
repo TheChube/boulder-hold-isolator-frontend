@@ -19,7 +19,7 @@ export default function App() {
 
     try {
       const response = await axios.post(
-        "https://boulder-hold-isolater-backend.onrender.com",
+        "https://boulder-hold-isolater-backend.onrender.com/isolate",
         formData,
         { responseType: "blob" }
       );
