@@ -11,7 +11,7 @@ export default function App() {
     formData.append("file", image);
     formData.append("color", color);
 
-    const response = await axios.post("https://YOUR-BACKEND-URL.onrender.com/isolate", formData, {
+    const response = await axios.post("https://boulder-hold-isolater-backend.onrender.com", formData, {
       responseType: "blob",
     });
 
