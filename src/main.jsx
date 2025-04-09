@@ -1,5 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
+from fastapi.middleware.cors import CORSMiddleware
 
-ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Or add your Vercel frontend domain here
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
